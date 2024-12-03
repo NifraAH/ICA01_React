@@ -7,7 +7,19 @@ import Cart from './Cart';
 export default function Products(){
 
     const [cartItems, setCartItems] = useState([]);
-    
+
+    const addToCart = (flower) => {
+        setCartItems((prevItems) => {
+          const existingItem = prevItems.find((item) => item.id === flower.id);
+          if (existingItem) {
+            return prevItems.map((item) =>
+              item.id === flower.id ? { ...item, qty: item.qty + flower.qty } : item
+            );
+          } else {
+            return [...prevItems, flower];
+          }
+        });
+      };
    
     return(
         <>
