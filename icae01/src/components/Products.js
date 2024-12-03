@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../assets/CSS/layout.css';
 import { flowers } from './FlowerDB';
-
+import Product from './Product';
 
 export default function Products(){
    
