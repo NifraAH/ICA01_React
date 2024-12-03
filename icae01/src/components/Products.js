@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../assets/CSS/layout.css';
-
+import { flowers } from './FlowerDB';
 
 
 export default function Products(){
