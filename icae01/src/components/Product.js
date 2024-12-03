@@ -16,7 +16,7 @@ export default function Product({ flower, addToCart }){
         <div className="grid-item">
 
             <div class="card">
-                <img src={require(`../assets/image/${flower.img}`).default} alt={flower.name} className="img"/>
+                <img src={require(`../assets/image/${flower.img}`)} alt={flower.name} className="img"/>
                 <div class="card-body">
                     <h5 class="card-title">{flower.name} Price: {flower.price}</h5>
                     <div class="quantity-container">

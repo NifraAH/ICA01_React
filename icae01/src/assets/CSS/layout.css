@@ -74,8 +74,8 @@ h3 {
 
 .card img {
   width: 60%;
-  /*border: 5px solid chocolate;
-  height: 150px;*/
+  border: 1px dotted chocolate;
+  height: 150px;
 }
 
 .card-body {
