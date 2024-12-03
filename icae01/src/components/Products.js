@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../assets/CSS/layout.css';
 import { flowers } from './FlowerDB';
 import Product from './Product';
+import Cart from './Cart';
 
 export default function Products(){
    
