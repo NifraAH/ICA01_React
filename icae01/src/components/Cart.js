@@ -1,4 +1,6 @@
 export default function Cart({ cartItems }) {
+
+    const grandTotal = cartItems.reduce((total, item) => total + item.price * item.qty, 0);
     
     return (
         <div className="table-container">
