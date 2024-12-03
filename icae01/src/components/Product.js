@@ -24,7 +24,7 @@ export default function Product({ flower, addToCart }){
                         <input type="number" id="quantity" name="quantity" value={quantity}
               onChange={(e) => setQuantity(parseInt(e.target.value) || 0)} />
                     </div>
-                    <button class="card-button">Add to Cart</button>
+                    <button class="card-button" onClick={handleAddToCart}>Add to Cart</button>
                 </div>
             </div>
         </div>
